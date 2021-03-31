@@ -18,7 +18,7 @@ unsigned Main_core1(void )
 
     FILE *file = NULL;                         //开始加载指令
     INSTRUCTION ins;
-    file = fopen("dict1.dic", "r");
+    file = fopen("..\\TestData\\dict1.dic", "r");
     Pre_load(file, 1);
     fclose(file);
     file = NULL;                               //指令加载结束.所有指令都进入内存中
@@ -42,7 +42,7 @@ unsigned Main_core2(void )
 
     FILE *file = NULL;                         //开始加载指令
     INSTRUCTION ins;
-    file = fopen("dict2.dic", "r");
+    file = fopen("..\\TestData\\dict2.dic", "r");
     Pre_load(file, 2);
     fclose(file);
     file = NULL;                               //指令加载结束.所有指令都进入内存中
